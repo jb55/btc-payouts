@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>btc payouts</title>
+        <style>
+
+         body {
+         }
+
+         #errmsg {
+             border: 1px solid red;
+             background-color: #E06C75;
+             color: white;
+             padding: 5px;
+         }
+
+         textarea {
+             width: 100%;
+             height: 100px;
+         }
+
+         table {
+             margin-top: 20px;
+             margin-bottom: 40px;
+             border-collapse: collapse;
+             border-spacing: 0;
+             width: 100%;
+         }
+
+         table,
+         table th,
+         table td {
+             border: none;
+             text-align: left;
+             padding: 8px;
+         }
+
+         table tbody tr:nth-child(even) {
+             background-color: #f2f2f2
+         }
+        </style>
+        <script>
+        </script>
+    </head>
+    <body>
+        <textarea id="csv">2019-08,xpub6CqUQeXefeJsXDGfHtrm8XBevxgMBV1cXJTFHRCjZL8VVZD5qEDidE9JVdSff6tKSABAj8ziB1NbZGvRUNMHYR5ewenVb263XpYEZS77CJn,0.123
+2019-10,xpub6BpsMw54oF9Bf1yQogLSTAYDApMPuQgTn2XV1ND9MnnM2iJN1B4Dy1VvqqSQnV5useTDyXeE7mwLZTsddHwMMn3nS9t5onEymkimJHhnLJi,0.01,bob</textarea>
+        <p id="errmsg" >
+        </p>
+        <span>
+            <p id="month"></p>
+            <button onclick="prevMonth()">-</button>
+            <button onclick="nextMonth()">+</button>
+        </span>
+        <table>
+        </table>
+    <script src="dist/bundle.js"></script>
+    </body>
+</html>
+
