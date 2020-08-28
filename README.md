@@ -8,3 +8,4 @@ deterministic payroll using xpubs
 ## TODO
 
 * This currently assumes an address type, so would be better to update this to support descriptors instead
+* actually create a single bitcoin transactions with these outputs
